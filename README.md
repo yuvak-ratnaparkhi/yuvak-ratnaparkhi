@@ -16,7 +16,6 @@ Final-year B.Tech CSE student (YCCE, Nagpur) building full-stack, ML-driven prod
 - 🔭 Currently building **GeneScope AI** — an explainable genetic disorder risk screener (Random Forest + GenAI explanations)
 - 📊 Deployed **IPL Performance Analytics Intelligence System** — PostgreSQL → XGBoost → Power BI → Streamlit
 - 🌱 Sharpening DSA + placement portfolio for campus hiring season
-- 💬 Ask me about data pipelines, Power BI dashboards, or ML model deployment
 - 📫 Reach me at **yuvakratnaparkhi@gmail.com**
 
 ---
