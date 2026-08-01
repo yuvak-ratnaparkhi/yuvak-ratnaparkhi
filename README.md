@@ -93,8 +93,6 @@ Final-year B.Tech CSE student (YCCE, Nagpur) building full-stack, ML-driven prod
 
 ### 🐍 Contribution Snake
 
-<!-- Snake animation — generated via GitHub Actions, zero rate-limit issues -->
-<!-- SETUP REQUIRED: See instructions below this README to enable the snake -->
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yuvak-ratnaparkhi/yuvak-ratnaparkhi/output/github-contribution-grid-snake-dark.svg"/>
@@ -102,26 +100,6 @@ Final-year B.Tech CSE student (YCCE, Nagpur) building full-stack, ML-driven prod
     <img alt="Contribution Snake" src="https://raw.githubusercontent.com/yuvak-ratnaparkhi/yuvak-ratnaparkhi/output/github-contribution-grid-snake.svg"/>
   </picture>
 </p>
-
----
-
-### 📈 Coding Activity
-
-<!-- WakaTime — shows real coding hours breakdown per language (needs free WakaTime account + IDE plugin) -->
-<!-- SETUP REQUIRED: Sign up at wakatime.com, install VS Code extension, add WAKATIME_API_KEY secret -->
-<!--
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=yuvak_ratnaparkhi&theme=radical&hide_border=true&layout=compact" width="60%" alt="WakaTime Stats"/>
-</p>
--->
-
-<!-- Metrics card — shows real profile data, no rate-limit — generated via GitHub Actions -->
-<!-- SETUP REQUIRED: See metrics setup below -->
-<!--
-<p align="center">
-  <img src="https://raw.githubusercontent.com/yuvak-ratnaparkhi/yuvak-ratnaparkhi/main/github-metrics.svg" width="70%" alt="GitHub Metrics"/>
-</p>
--->
 
 ---
 
@@ -143,33 +121,6 @@ Final-year B.Tech CSE student (YCCE, Nagpur) building full-stack, ML-driven prod
 
 ---
 
-<!-- ============================================================
-  🐍 SNAKE SETUP (5 minutes, do this once)
-  ============================================================
-  1. In your yuvak-ratnaparkhi/yuvak-ratnaparkhi repo, create this file:
-     .github/workflows/snake.yml
-
-  2. Paste this into snake.yml:
-
-  name: Generate Snake Animation
-  on:
-    schedule:
-      - cron: "0 0 * * *"   # runs daily at midnight
-    workflow_dispatch:
-  jobs:
-    generate:
-      runs-on: ubuntu-latest
-      steps:
-        - uses: Platane/snk/svg-only@v3
-          with:
-            github_user_name: yuvak-ratnaparkhi
-            outputs: |
-              dist/github-contribution-grid-snake.svg
-              dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-        - uses: crazy-max/ghaction-github-pages@v3
-          with:
-            target_branch: output
-            build_dir: dist
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
