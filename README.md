@@ -121,10 +121,4 @@ Final-year B.Tech CSE student (YCCE, Nagpur) building full-stack, ML-driven prod
 
 ---
 
-          env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  3. Go to Actions tab → Run workflow manually once.
-  4. The SVGs are then committed to the `output` branch automatically.
-  The snake image in the README will appear once step 3 is done.
-  ============================================================ -->
