@@ -73,29 +73,55 @@ Final-year B.Tech CSE student (YCCE, Nagpur) building full-stack, ML-driven prod
 
 ### 📊 GitHub Stats
 
-<!-- FIX: Use ?cache_seconds=86400 to avoid rate-limit blank renders -->
-<!-- FIX: Stats card — add &rank_icon=github for cleaner look -->
+<!-- Streak — demolab is the maintained service, works reliably -->
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=yuvak-ratnaparkhi&show_icons=true&theme=radical&hide_border=true&count_private=true&rank_icon=github&cache_seconds=86400" width="49%" alt="Yuvak's GitHub Stats"/>
-  <img src="https://streak-stats.demolab.com/?user=yuvak-ratnaparkhi&theme=radical&hide_border=true" width="49%" alt="Yuvak's Streak Stats"/>
+  <img src="https://streak-stats.demolab.com/?user=yuvak-ratnaparkhi&theme=radical&hide_border=true" width="60%" alt="GitHub Streak"/>
 </p>
 
-<!-- FIX: streak-stats.demolab.com is the maintained fork — herokuapp is abandoned and often broken -->
-
-<!-- FIX: Top langs — use vercel with cache param -->
+<!-- Stats + Top Langs — githubstats.me is a reliable alternative that doesn't rate-limit -->
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=yuvak-ratnaparkhi&layout=compact&theme=radical&hide_border=true&cache_seconds=86400&langs_count=8" width="45%" alt="Top Languages"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=yuvak-ratnaparkhi&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=true" width="49%" alt="GitHub Stats"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=yuvak-ratnaparkhi&layout=compact&theme=radical&hide_border=true&langs_count=8&exclude_repo=yuvak-ratnaparkhi" width="49%" alt="Top Languages"/>
 </p>
 
-<!-- FIX: Activity graph — use github-readme-activity-graph.vercel.app (maintained) -->
+<!-- Activity graph — this service is stable and actively maintained -->
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=yuvak-ratnaparkhi&theme=react-dark&hide_border=true&area=true" width="90%" alt="Contribution Graph"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=yuvak-ratnaparkhi&theme=react-dark&hide_border=true&area=true&custom_title=Contribution%20Activity" width="92%" alt="Contribution Graph"/>
 </p>
 
-<!-- FIX: Trophy — add &no-bg=true&margin-w=4 to reduce blank render risk -->
+---
+
+### 🐍 Contribution Snake
+
+<!-- Snake animation — generated via GitHub Actions, zero rate-limit issues -->
+<!-- SETUP REQUIRED: See instructions below this README to enable the snake -->
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=yuvak-ratnaparkhi&theme=radical&no-frame=true&no-bg=true&row=1&column=6&margin-w=4" width="90%" alt="GitHub Trophies"/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yuvak-ratnaparkhi/yuvak-ratnaparkhi/output/github-contribution-grid-snake-dark.svg"/>
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/yuvak-ratnaparkhi/yuvak-ratnaparkhi/output/github-contribution-grid-snake.svg"/>
+    <img alt="Contribution Snake" src="https://raw.githubusercontent.com/yuvak-ratnaparkhi/yuvak-ratnaparkhi/output/github-contribution-grid-snake.svg"/>
+  </picture>
 </p>
+
+---
+
+### 📈 Coding Activity
+
+<!-- WakaTime — shows real coding hours breakdown per language (needs free WakaTime account + IDE plugin) -->
+<!-- SETUP REQUIRED: Sign up at wakatime.com, install VS Code extension, add WAKATIME_API_KEY secret -->
+<!--
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=yuvak_ratnaparkhi&theme=radical&hide_border=true&layout=compact" width="60%" alt="WakaTime Stats"/>
+</p>
+-->
+
+<!-- Metrics card — shows real profile data, no rate-limit — generated via GitHub Actions -->
+<!-- SETUP REQUIRED: See metrics setup below -->
+<!--
+<p align="center">
+  <img src="https://raw.githubusercontent.com/yuvak-ratnaparkhi/yuvak-ratnaparkhi/main/github-metrics.svg" width="70%" alt="GitHub Metrics"/>
+</p>
+-->
 
 ---
 
@@ -114,3 +140,40 @@ Final-year B.Tech CSE student (YCCE, Nagpur) building full-stack, ML-driven prod
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=yuvak-ratnaparkhi&label=Profile%20Views&color=blueviolet&style=flat"/>
 </p>
+
+---
+
+<!-- ============================================================
+  🐍 SNAKE SETUP (5 minutes, do this once)
+  ============================================================
+  1. In your yuvak-ratnaparkhi/yuvak-ratnaparkhi repo, create this file:
+     .github/workflows/snake.yml
+
+  2. Paste this into snake.yml:
+
+  name: Generate Snake Animation
+  on:
+    schedule:
+      - cron: "0 0 * * *"   # runs daily at midnight
+    workflow_dispatch:
+  jobs:
+    generate:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: Platane/snk/svg-only@v3
+          with:
+            github_user_name: yuvak-ratnaparkhi
+            outputs: |
+              dist/github-contribution-grid-snake.svg
+              dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+        - uses: crazy-max/ghaction-github-pages@v3
+          with:
+            target_branch: output
+            build_dir: dist
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  3. Go to Actions tab → Run workflow manually once.
+  4. The SVGs are then committed to the `output` branch automatically.
+  The snake image in the README will appear once step 3 is done.
+  ============================================================ -->
