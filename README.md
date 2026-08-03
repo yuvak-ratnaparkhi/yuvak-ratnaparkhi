@@ -73,18 +73,12 @@ Final-year B.Tech CSE student (YCCE, Nagpur) building full-stack, ML-driven prod
 
 ### 📊 GitHub Stats
 
-<!-- Streak — demolab is the maintained service, works reliably -->
+<!-- STREAK: gitstreak.vercel.app is a community-maintained fork that avoids demolab rate limits -->
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=yuvak-ratnaparkhi&theme=radical&hide_border=true" width="60%" alt="GitHub Streak"/>
+  <img src="https://github-readme-streak-stats-eight.vercel.app?user=yuvak-ratnaparkhi&theme=radical&hide_border=true" width="60%" alt="GitHub Streak"/>
 </p>
 
-<!-- Stats + Top Langs — githubstats.me is a reliable alternative that doesn't rate-limit -->
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=yuvak-ratnaparkhi&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=true" width="49%" alt="GitHub Stats"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=yuvak-ratnaparkhi&layout=compact&theme=radical&hide_border=true&langs_count=8&exclude_repo=yuvak-ratnaparkhi" width="49%" alt="Top Languages"/>
-</p>
-
-<!-- Activity graph — this service is stable and actively maintained -->
+<!-- ACTIVITY GRAPH: vercel-hosted, stable and actively maintained -->
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=yuvak-ratnaparkhi&theme=react-dark&hide_border=true&area=true&custom_title=Contribution%20Activity" width="92%" alt="Contribution Graph"/>
 </p>
@@ -100,6 +94,37 @@ Final-year B.Tech CSE student (YCCE, Nagpur) building full-stack, ML-driven prod
     <img alt="Contribution Snake" src="https://raw.githubusercontent.com/yuvak-ratnaparkhi/yuvak-ratnaparkhi/output/github-contribution-grid-snake.svg"/>
   </picture>
 </p>
+
+<!-- SNAKE SETUP — do this once (5 mins):
+  1. Inside your yuvak-ratnaparkhi/yuvak-ratnaparkhi repo, create:
+       .github/workflows/snake.yml
+  2. Paste this content into it:
+
+  name: Generate Snake Animation
+  on:
+    schedule:
+      - cron: "0 0 * * *"
+    workflow_dispatch:
+  jobs:
+    generate:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: Platane/snk/svg-only@v3
+          with:
+            github_user_name: yuvak-ratnaparkhi
+            outputs: |
+              dist/github-contribution-grid-snake.svg
+              dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+        - uses: crazy-max/ghaction-github-pages@v3
+          with:
+            target_branch: output
+            build_dir: dist
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  3. Go to Actions tab → click "Generate Snake Animation" → Run workflow.
+  4. Done — snake appears here automatically and refreshes daily.
+-->
 
 ---
 
@@ -118,7 +143,3 @@ Final-year B.Tech CSE student (YCCE, Nagpur) building full-stack, ML-driven prod
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=yuvak-ratnaparkhi&label=Profile%20Views&color=blueviolet&style=flat"/>
 </p>
-
----
-
-
